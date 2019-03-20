@@ -88,6 +88,11 @@ var browser = function() {
         } else {
             html += '<h2 class="expand">' + data.name + '</h2>';
         }
+// ZEEBOX HACK ZONE
+        html += '<div class="fixed alignmid">';
+        html += '<a title="RECORD MP3 !!" href="./youtube/search.php?q='+encodeURIComponent(data.name)+'&maxResults=3" target="youtube"><i style="width: 32px; height: 32px; font-size: 22px;" id="button_yt" class="icon-youtube-circled topimg sep fixed"></i><br>[REC]</a>';
+        html += '</div>';
+// ZEEBOX HACK ZONE  
         html += '<div class="fixed alignmid">';
         html += '<i class="icon-menu svg-square infoclick clickicon frog tooltip" title="'+language.gettext('label_hidepanel')+'"></i>';
         html += '</div>';
