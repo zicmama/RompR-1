@@ -158,7 +158,7 @@ var infobar = function() {
 // ZEEBOX HACK ZONE
         var ysearch = npinfo.artist+" "+npinfo.title;
         if ( ! npinfo.artist ) { ysearch = npinfo.stream; }
-        var zcopylink = ' <a title="RECHERCHE YOUTUBE COPIER EN MP3 !!" href="../youtube/search.php?q=' + escape(encodeURIComponent(ysearch)) + '&artist=' + escape(encodeURIComponent(npinfo.artist)) + '&title=' + escape(encodeURIComponent(npinfo.title)) + '&radio='+ escape(encodeURIComponent(npinfo.album)) +'&maxResults=3" target="youtube">[REC]</a>';
+        var zcopylink = ' <a title="RECHERCHE YOUTUBE COPIER EN MP3 !!" href="./youtube/search.php?q=' + escape(encodeURIComponent(ysearch)) + '&artist=' + escape(encodeURIComponent(npinfo.artist)) + '&title=' + escape(encodeURIComponent(npinfo.title)) + '&radio='+ escape(encodeURIComponent(npinfo.album)) +'&maxResults=3" target="youtube">[REC]</a>';
 		lines[0].text += zcopylink;         
 // ZEEBOX HACK ZONE
         return lines;
