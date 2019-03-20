@@ -120,7 +120,10 @@ var info_lastfm = function() {
                 }
                 html += '</td></tr>';
                 html += '<tr><td align="center"><a href="'+similies[i].url+'" target="_blank">'+similies[i].name+'</a></td></tr>';
-                html += '</table>';
+// ZEEBOX HACK ZONE
+                html += '<tr><td align="center"><a title="RECORD MP3 !!" href="./youtube/search.php?q='+encodeURIComponent(similies[i].name)+'&maxResults=3" target="youtube"><i style="width: 32px; height: 32px; font-size: 22px;" id="button_yt" class="icon-youtube-circled topimg sep fixed"></i><br>[copier]</a></td></tr>';
+// ZEEBOX HACK ZONE                
+		html += '</table>';
                 html += '</div>';
             }
             html += '</div></td></tr></table></div>';
